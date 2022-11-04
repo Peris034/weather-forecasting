@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: transparent;
+    
+}
+
+
+.containe{
+    padding: 20px 7px;
+    color:#fff;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.date-containe{
+    font-weight: 100;
+}
+.date-containe .time{
+    font-size: 44px;
+}
+
+.date-containe #am-pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date-containe .date{
+    font-size: 30px;
+}
+
+
+
+
+@media only screen and  (max-width:730px){
+    
+    .containe{
+        padding: 20px;
+    }
+    .date-containe .time{
+        font-size: 50px;
+    }
+
+    .date-containe #am-pm{
+        font-size: 20px;
+    }
+
+    .date-containe .date{
+        font-size: 20px;
+    }
+
+}
+
+.dropbtn {
+    background-color: #ffffff00;
+    color: white;
+    align-items: left;
+    float: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    margin-left: 700px;
+    width:170px;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    left:-10%;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    /* display: inline-block; */
+    left: -10%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #fefcfc;
+    font-size: 13px;
+    min-width: 183px;
+    margin-left: 19px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(5, 5, 5);
+    padding: 12px 10px;
+    font-size: 17px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(129, 139, 139);
+    border-radius: 10px; }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #ffffff00;}
+
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    display: flex;
+}
+
+#container #location {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 11%;
+    display: flex;
+    /* margin-left: 700px; */
+    justify-content: center;
+    flex-direction: row;
+}
+
+#container #location1 {
+    height: 60px;
+    width: 100%;
+    /* position: absolute; */
+    left: -5%;
+    top: -30%;
+    display: flex;
+    margin-left: -158px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#container #location2 {
+    height: 60px;
+    width: 100%;
+    /* position: absolute; */
+    left: -5%;
+    top: -10%;
+    display: flex;
+    margin-left: -158px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#container input {
+    height: 50px;
+    width: 300px;
+    margin: 0px 20px;
+    padding: 0 20px;
+    left: 0%;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 20px;
+    color: black;
+}
+
+#container input::placeholder {
+    color: #000000d0;
+}
+
+#container input[type="submit"] {
+    cursor: pointer;
+    width: 150px;
+    background: #00ff37d0;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#tempIcon {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 37%;
+    margin-left: 0px;
+    left: 15%;
+    
+}
+#tempIcon1 {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 37%;
+    margin-left: 0px;
+    left: 50%;
+    
+}
+#tempIcon2 {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 37%;
+    margin-left: 0px;
+    left: 86%;
+    
+}
+
+#weatherCountry {
+    font-size: 30px;
+    position: absolute;
+    top: 39%;
+    margin-left: 30px;
+    /* margin-left: auto; */
+    margin-right: 20%;
+}
+#weatherCountry1 {
+    font-size: 30px;
+    position: absolute;
+    top: 39%;
+    margin-left: 500px;
+    /* margin-left: auto; */
+    margin-right: 20%;
+}
+#weatherCountry2 {
+    font-size: 30px;
+    position: absolute;
+    top: 39%;
+    margin-left: 1010px;
+    /* margin-left: auto; */
+    margin-right: 20%;
+}
+
+#temperature {
+    font-size: 40px;
+    position: absolute;
+    margin-right: -1000px;
+    top: 46%;
+    left: 3%;
+}
+#temperature1 {
+    font-size: 40px;
+    position: absolute;
+    margin-right: -1000px;
+    top: 46%;
+    left: 33%;
+}
+#temperature2 {
+    font-size: 40px;
+    position: absolute;
+    margin-right: -1000px;
+    top: 46%;
+    left: 68%;
+}
+
+#temperature b {
+    color: red;
+    margin-right: -900px;
+}
+
+#weatherDescription {
+    font-size: 20px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 38%;
+    margin-right: -100px;
+    left: 17%;
+}
+#weatherDescription1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 38%;
+    margin-right: -100px;
+    left: 52%;
+}
+#weatherDescription2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 38%;
+    margin-right: -100px;
+    left: 88%;
+}
+
+#container ul {
+    position: absolute;
+    bottom: 17%;
+    left: auto;
+    margin-left: -650px;
+    right: auto;
+    margin-right: 20%;
+}
+
+#container ul li {
+    font-size: 20px;
+    margin: 20px 0;
+    margin-left: 700px;
+    list-style-type: none;
+    margin-right: 5rem;
+}
+#container ul lu {
+    font-size: 20px;
+    margin: 0px 500px;
+    margin-left: 700px;
+    list-style-type: none;
+    margin-right: 5rem;
+}
+
+.features
+{
+    justify-content: center;
+    top:70%;
+  margin-left:  -10px;
+}
+.features1
+{
+    justify-content: center;
+    top:70%;
+  margin-left: 450px;
+}
+.features2
+{
+    justify-content: center;
+    top:80%;
+  margin-left: 930px;
+}
+
+/* .flex
+{
+  float: left;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 430px;
+  height: 22rem;
+  margin: 1em;
+  margin-top: 17;
+  
+  margin-left: 0px;
+  /* margin-left: 500px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /*display: flex;
+  justify-content: center;
+}
+*/
+/*
+.flex1
+{
+  float: left;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 430px;
+  height: 22rem;
+  margin: 1em;
+  top: -25%;
+  
+  margin-left: 500px;
+  /* margin-left: 500px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /*display: flex;
+  justify-content: center;
+}*/
+/*
+.flex2
+{
+  float: left;
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 430px;
+  height: 22rem;
+  margin: 1em;
+  margin-top: 0;
+  
+  margin-left: 200px;
+  /* margin-left: 500px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /*display: flex;
+  justify-content: center;
+} */
+
+.te
+{
+    margin-right:1800px;
+}
+
+
+.h2
+{
+    /* margin-left: -1100px; */
+    
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    font-family: "myFirstFont"; 
+}
+
+@font-face {
+    font-family: "myFirstFont"; 
+    src: url("fonts/ticking-timebomb-bb.regular.ttf"); 
+}

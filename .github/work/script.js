@@ -11,7 +11,7 @@ const elem = document.getElementById("input");
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const API_KEY ='49cc8c821cd2aff9af04c9f98c36eb74';
+const API_KEY =`bd4ea33ecf905116d12af172e008dbae`;
 
 setInterval(() => {
     const time = new Date();
@@ -69,6 +69,9 @@ function showWeatherData (data){
     countryEl.innerHTML = data.lat + 'N ' + data.lon+'E'
 
     currentWeatherItemsEl.innerHTML = 
+    // <div class="weather-item1">
+    // <div><b>${city}</b></div>
+    // </div>
     `<div class="weather-item1">
         <div><b>${temp}&#176;C</b></div>
     </div>
